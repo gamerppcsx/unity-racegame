@@ -5,17 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
-  public void playGame()
+  public void playGame1()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
 	SceneManager.LoadScene("secondairy");
     }
-    public void Back()
+    public void menu1()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1, LoadSceneMode.Additive);
 	SceneManager.LoadScene("menu1");
     }
-        public void links()
+        public void menu2()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1, LoadSceneMode.Additive);
 	SceneManager.LoadScene("menu2");
@@ -29,6 +29,11 @@ public class SceneSwitcher : MonoBehaviour
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
 	SceneManager.LoadScene("menu3");
+    }
+            public void playgame3()
+    {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+	SceneManager.LoadScene("secondairy 3");
     }
     
 }
