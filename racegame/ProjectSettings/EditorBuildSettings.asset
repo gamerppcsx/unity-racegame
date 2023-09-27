@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/secondairy 2.unity
     guid: eb3ad471ea1eb5a4fa0abcbc751d4575
+  - enabled: 1
+    path: Assets/Scenes/menu3.unity
+    guid: 545bc15503498da4b9ec3cdda58a6ddc
   m_configObjects: {}
