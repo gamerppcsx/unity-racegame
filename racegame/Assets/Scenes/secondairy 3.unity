@@ -211,7 +211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6060624}
   serializedVersion: 2
-  m_LocalRotation: {x: 8.6378377e-10, y: 0.99875855, z: -0.04981371, w: 0.000000017318756}
+  m_LocalRotation: {x: -8.637836e-10, y: 0.99875855, z: -0.0498137, w: -0.000000017318756}
   m_LocalPosition: {x: 631.3994, y: 8.15, z: 475.85}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
@@ -1774,6 +1774,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 1fa0b608d1dc42440b2b1274b35a84c6, type: 3}
     - {fileID: -8700617353114198275, guid: 1fa0b608d1dc42440b2b1274b35a84c6, type: 3}
+    - {fileID: -2572967989333021709, guid: 1fa0b608d1dc42440b2b1274b35a84c6, type: 3}
+    - {fileID: -3824974996824756987, guid: 1fa0b608d1dc42440b2b1274b35a84c6, type: 3}
+    - {fileID: 2654713335656134247, guid: 1fa0b608d1dc42440b2b1274b35a84c6, type: 3}
+    - {fileID: -168051006817133204, guid: 1fa0b608d1dc42440b2b1274b35a84c6, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7997351832304706054, guid: 1fa0b608d1dc42440b2b1274b35a84c6, type: 3}
       insertIndex: -1
@@ -1821,8 +1825,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.6336551, z: 5.9146395}
+  m_Center: {x: 0, y: 1.0031723, z: 0.14755249}
 --- !u!54 &719274113
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1834,7 +1838,7 @@ Rigidbody:
   m_Mass: 3000
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_CenterOfMass: {x: 0, y: -0.12, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -1843,7 +1847,7 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
+  m_ImplicitCom: 0
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1862,7 +1866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd2326b07b1e79499797e6bd718cd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motorForce: -8000
+  motorForce: 8000
   breakForce: 4000
   maxSteerAngle: 30
   frontLeftWheelCollider: {fileID: 278129593}
