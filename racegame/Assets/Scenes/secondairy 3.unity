@@ -1825,8 +1825,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.6336551, z: 5.9146395}
-  m_Center: {x: 0, y: 1.0031723, z: 0.14755249}
+  m_Size: {x: 2.14, y: 1.17, z: 5.9146395}
+  m_Center: {x: 0, y: 0.72, z: 0.14755249}
 --- !u!54 &719274113
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1866,8 +1866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd2326b07b1e79499797e6bd718cd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motorForce: 8000
-  breakForce: 4000
+  motorForce: 16000
+  breakForce: 40000
   maxSteerAngle: 30
   frontLeftWheelCollider: {fileID: 278129593}
   frontRightWheelCollider: {fileID: 70214122}
