@@ -40,5 +40,10 @@ public class SceneSwitcher : MonoBehaviour
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
 	SceneManager.LoadScene("secondairy 4");
     }
+                public void menu4()
+    {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+	SceneManager.LoadScene("menu4");
+    }
     
 }
