@@ -45,5 +45,9 @@ public class SceneSwitcher : MonoBehaviour
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
 	SceneManager.LoadScene("menu4");
     }
-    
+                public void playgame5()
+    {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+	SceneManager.LoadScene("secondairy 5");
+    }
 }
