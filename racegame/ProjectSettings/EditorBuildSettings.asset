@@ -35,4 +35,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/secondairy 5.unity
     guid: 3e00d7ac4054bf74b92b7900503a6c5a
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 156a0110ce0a911419f5c97b535dedcd, type: 2}
