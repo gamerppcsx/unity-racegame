@@ -7,7 +7,9 @@ public class CarController : MonoBehaviour
 {
     private float horizontalInput, verticalInput;
     private float currentSteerAngle, currentbreakForce;
-    private bool isBreaking;
+    //private bool isBreaking;
+    private float isBreaking;
+    private bool BreakingBool;
 
     // Settings
     [SerializeField] private float motorForce, breakForce, maxSteerAngle;
@@ -35,13 +37,16 @@ public class CarController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
 
         // Breaking Input
-        isBreaking = Input.GetKey(KeyCode.Space);
+        //isBreaking = Input.GetKey(KeyCode.Space);
+        isBreaking = Input.GetAxis("Jump");
+        if(isBreaking > 0){ BreakingBool = true; }else{ BreakingBool = false; }
     }
 
     private void HandleMotor() {
         rearLeftWheelCollider.motorTorque = verticalInput * motorForce;
         rearRightWheelCollider.motorTorque = verticalInput * motorForce;
-        currentbreakForce = isBreaking ? breakForce : 0f;
+        //currentbreakForce = isBreaking ? breakForce : 0f;
+        currentbreakForce = BreakingBool ? breakForce : 0f;
         ApplyBreaking();
     }
 
