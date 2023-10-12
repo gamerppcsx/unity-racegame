@@ -42,7 +42,7 @@ public partial class @Idk: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""00b67e6d-a639-413d-a87c-ef07af71acb1"",
                     ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""New action"",
