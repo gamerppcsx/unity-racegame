@@ -45,7 +45,7 @@ public class CarController : MonoBehaviour
 
     private void HandleMotor() {
         acceHandler = verticalInput * motorForce;
-        if(acceHandler > (maxAccelaration + 50 )){ //+50 niet nodig is gewoon ter controle //maxAccelaration kun je editen in de components
+        if(acceHandler >= (maxAccelaration)){ //+50 niet nodig is gewoon ter controle //maxAccelaration kun je editen in de components
         rearLeftWheelCollider.motorTorque = verticalInput * motorForce;
         rearRightWheelCollider.motorTorque = verticalInput * motorForce;
         }else{
