@@ -10,7 +10,9 @@ public class Timerexample : MonoBehaviour
     public bool srt;
     public Text disvar;
     public GameObject car;
+    public GameObject car2;
     private DestroyCubes2 collision_bool;
+    private DestroyCubes3 collision_bool2;
     /*public void start_bool()
     {
         var classVars = new DestroyCubes2();
@@ -21,6 +23,7 @@ public class Timerexample : MonoBehaviour
             val=0;
             srt=false;
             collision_bool = car.GetComponent<DestroyCubes2>();
+            collision_bool2 = car2.GetComponent<DestroyCubes3>();
         }
     void Update() 
     { 
@@ -29,7 +32,7 @@ public class Timerexample : MonoBehaviour
         //var classVars = new DestroyCubes2();
         //if(srt)     
         //if(DestroyCubes2.start)
-        if(collision_bool.start)
+        if(collision_bool.start == true && collision_bool2.stop == false)
             {         
                 val += Time.deltaTime;    
             } 

@@ -8,7 +8,7 @@ namespace Timer
 {
 public class DestroyCubes3 : MonoBehaviour
 {
-public bool start;
+public bool stop;
 
 
     //void OnCollisionEnter(Collision col)
@@ -22,8 +22,8 @@ public bool start;
         if(col.gameObject.name == "voxel_car")
         {
             //timerVars.srt=true;
-            start = false;
-            Debug.Log("start");
+            stop = true;
+            Debug.Log("stop");
         }
     }
 
