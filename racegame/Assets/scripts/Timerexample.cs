@@ -34,7 +34,8 @@ public class Timerexample : MonoBehaviour
                 val += Time.deltaTime;    
             } 
 
-        double b = System.Math.Round (val, 2);     
+        double b = System.Math.Round (val, 2);  
+           
 
     disvar.text = b.ToString ();    
     }
