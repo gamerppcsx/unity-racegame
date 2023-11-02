@@ -10,6 +10,8 @@ public class CarController : MonoBehaviour
     //private bool isBreaking;
     private float isBreaking;
     private bool BreakingBool;
+    public float KPH;
+
 
     // Settings
     [SerializeField] private float motorForce, breakForce, maxSteerAngle;
@@ -28,6 +30,22 @@ public class CarController : MonoBehaviour
         HandleMotor();
         HandleSteering();
         UpdateWheels();
+
+
+        /*float force = verticalInput * motorForce;
+        float 
+        Vector3 horizontalVelocity = velocity;
+        horizontalVelocity = new Vector3(velocity.x, 0, velocity.z);
+
+        // The speed on the x-z plane ignoring any speed
+        float horizontalSpeed = horizontalVelocity.magnitude;
+        // The speed from gravity or jumping
+        float verticalSpeed  = velocity.y;
+        // The overall speed
+        float overallSpeed = velocity.magnitude;
+        KPH = overallSpeed;*/
+        var vel = GetComponent<Rigidbody>().velocity;      //to get a Vector3 representation of the velocity
+        KPH = vel.magnitude;  
     }
 
     private void GetInput() {
