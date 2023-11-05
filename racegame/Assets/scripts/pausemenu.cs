@@ -7,7 +7,9 @@ public class pausemenu : MonoBehaviour{
 
     public static bool GameIsPaused = false;
 
+
     public GameObject pauseMenuUI;
+    public GameObject pauseMenu2UI;
 
     void Update()
     {
@@ -21,6 +23,7 @@ public class pausemenu : MonoBehaviour{
                 Pause();
             }
         }
+
     }
 
     public void Resume ()
@@ -28,16 +31,25 @@ public class pausemenu : MonoBehaviour{
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        pauseMenu2UI.SetActive(false);
     }
 
-    void Pause ()
+    public void Pause ()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        pauseMenu2UI.SetActive(false);
     }
     public void quit()
     {
         SceneManager.LoadScene("menuXD");
+    }
+    public void tijden ()
+    {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 0f;
+        GameIsPaused = false;
+        pauseMenu2UI.SetActive(true);
     }
 }

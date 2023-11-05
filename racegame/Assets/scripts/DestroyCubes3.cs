@@ -8,10 +8,13 @@ namespace Timer
 {
 public class DestroyCubes3 : MonoBehaviour
 {
-public bool stop;
+    public bool stop;
+    public float score;
+    
+    public GameObject car3;
+    private Timerexample vall;
 
 
-    //void OnCollisionEnter(Collision col)
     void OnTriggerEnter(Collider col)
     {
         Debug.Log("void");
@@ -26,6 +29,19 @@ public bool stop;
             Debug.Log("stop");
         }
     }
+    private void FixedUpdate()
+    {
+        if(stop == true)
+        {
+           score = vall.val;
+           
+        } 
+    }
+    void Start()
+    {
+        vall = car3.GetComponent<Timerexample>();
+    }
+
 
 }
 

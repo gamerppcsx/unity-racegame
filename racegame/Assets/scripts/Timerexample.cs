@@ -13,6 +13,7 @@ public class Timerexample : MonoBehaviour
     public GameObject car2;
     private DestroyCubes2 collision_bool;
     private DestroyCubes3 collision_bool2;
+    
     /*public void start_bool()
     {
         var classVars = new DestroyCubes2();
@@ -55,6 +56,7 @@ public class Timerexample : MonoBehaviour
     {
     srt=true;
     }
+
 }
 
 }
