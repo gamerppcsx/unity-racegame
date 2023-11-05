@@ -38,5 +38,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/menuXD.unity
     guid: 059046866f82d1144af6e2cbe5ed0159
+  - enabled: 1
+    path: Assets/Scenes/controles.unity
+    guid: 81e3c1b63c0cceb41bfad8e3b80c57b3
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 156a0110ce0a911419f5c97b535dedcd, type: 2}

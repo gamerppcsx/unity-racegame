@@ -60,4 +60,9 @@ public class SceneSwitcher : MonoBehaviour
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
 	SceneManager.LoadScene("controles");
     }
+                            public void menuxd()
+    {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+	SceneManager.LoadScene("menuXD");
+    }
 }
