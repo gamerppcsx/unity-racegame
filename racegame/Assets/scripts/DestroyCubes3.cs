@@ -8,8 +8,10 @@ namespace Timer
 {
 public class DestroyCubes3 : MonoBehaviour
 {
+    
     public bool stop;
     public float score;
+    public float numer;
     
     public GameObject car3;
     private Timerexample vall;
@@ -27,6 +29,7 @@ public class DestroyCubes3 : MonoBehaviour
             //timerVars.srt=true;
             stop = true;
             Debug.Log("stop");
+            numer += 1;
         }
     }
     private void FixedUpdate()
@@ -40,6 +43,7 @@ public class DestroyCubes3 : MonoBehaviour
     void Start()
     {
         vall = car3.GetComponent<Timerexample>();
+        
     }
 
 
