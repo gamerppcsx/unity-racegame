@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44300318, g: 0.49219626, b: 0.57192606, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -211,7 +211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6060624}
   serializedVersion: 2
-  m_LocalRotation: {x: -8.637834e-10, y: 0.99875855, z: -0.04981368, w: -0.000000017318756}
+  m_LocalRotation: {x: 8.637836e-10, y: 0.99875855, z: -0.0498137, w: 0.000000017318756}
   m_LocalPosition: {x: 631.3994, y: 8.15, z: 478.281}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
@@ -1794,7 +1794,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
   m_LocalPosition: {x: 434, y: 580.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1860,9 +1860,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd2326b07b1e79499797e6bd718cd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KPH: 0
   motorForce: -9000
   breakForce: 9000
   maxSteerAngle: 45
+  maxAccelaration: 0
   frontLeftWheelCollider: {fileID: 278129593}
   frontRightWheelCollider: {fileID: 70214122}
   rearLeftWheelCollider: {fileID: 964254694}

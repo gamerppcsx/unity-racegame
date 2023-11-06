@@ -8,9 +8,11 @@ namespace Timer
 {
 public class hgy : MonoBehaviour
 {
+    
 
     private DestroyCubes3 number , scoree;
     public GameObject car4;
+    public GameObject limitUI;
     
 
     public Text text1;
@@ -83,43 +85,44 @@ public class hgy : MonoBehaviour
 
     public void txt2()
     {
-
+        text2.text = scoree.score . ToString ();
     }
     public void txt3()
     {
-
+        text3.text = scoree.score . ToString ();
     }
 
     public void txt4()
     {
-
+        text4.text = scoree.score . ToString ();
     }
     public void txt5()
     {
-
+        text5.text = scoree.score . ToString ();
     }
 
     public void txt6()
     {
-
+         text6.text = scoree.score . ToString ();
     }
     public void txt7()
     {
-
+        text7.text = scoree.score . ToString ();
     }
 
     public void txt8()
     {
-
-    }
+        text8.text = scoree.score . ToString ();
+    }   
     public void txt9()
     {
-
+        text9.text = scoree.score . ToString ();
     }
 
     public void txt10()
     {
-
+        text10.text = scoree.score . ToString ();
+        limitUI.SetActive(true);
     }
 
 }
