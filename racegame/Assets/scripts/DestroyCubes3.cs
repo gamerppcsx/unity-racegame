@@ -37,7 +37,6 @@ public class DestroyCubes3 : MonoBehaviour
         if(stop == true)
         {
            score = vall.val;
-           
         } 
     }
     void Start()
