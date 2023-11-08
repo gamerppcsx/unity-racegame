@@ -12,9 +12,12 @@ public class timo : MonoBehaviour
     
     public GameObject car7;
     public GameObject car8;
+
     private DestroyCubes6 geo;
     private DestroyCubes7 upy;
+
     public Transform car;
+
     public Transform newCarLocation1;
     public Transform newCarLocation2;
     public Transform newCarLocation3;
@@ -26,7 +29,7 @@ public class timo : MonoBehaviour
     public Transform newCarLocation9;
     public Transform newCarLocation10;
     public Transform newCarLocation11;
-    
+
 
 
 
@@ -80,11 +83,13 @@ public class timo : MonoBehaviour
       
     geo = car7.GetComponent<DestroyCubes6>();
     upy = car8.GetComponent<DestroyCubes7>();
+
     }
     void Start()
     {
         geo = car7.GetComponent<DestroyCubes6>();
         upy = car8.GetComponent<DestroyCubes7>();
+
     }
 
     public void tp1()
@@ -160,6 +165,9 @@ public class timo : MonoBehaviour
         geo.checkcounter= 0;
         
     }
+
+
+        
 
 }
 }
