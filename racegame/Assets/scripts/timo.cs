@@ -12,12 +12,9 @@ public class timo : MonoBehaviour
     
     public GameObject car7;
     public GameObject car8;
-
     private DestroyCubes6 geo;
     private DestroyCubes7 upy;
-
     public Transform car;
-
     public Transform newCarLocation1;
     public Transform newCarLocation2;
     public Transform newCarLocation3;
@@ -29,7 +26,8 @@ public class timo : MonoBehaviour
     public Transform newCarLocation9;
     public Transform newCarLocation10;
     public Transform newCarLocation11;
-
+    public Rigidbody rb;
+    
 
 
 
@@ -83,13 +81,11 @@ public class timo : MonoBehaviour
       
     geo = car7.GetComponent<DestroyCubes6>();
     upy = car8.GetComponent<DestroyCubes7>();
-
     }
     void Start()
     {
         geo = car7.GetComponent<DestroyCubes6>();
         upy = car8.GetComponent<DestroyCubes7>();
-
     }
 
     public void tp1()
@@ -97,6 +93,8 @@ public class timo : MonoBehaviour
        car.position = newCarLocation1.position;
        upy.up =0;
        geo.checkcounter= 1;
+       car.rotation = Quaternion.Euler(0, 90, 0);
+        rb.velocity = new Vector3(0, 0, 0);
     }
 
     public void tp2()
@@ -104,12 +102,16 @@ public class timo : MonoBehaviour
         car.position = newCarLocation2.position;
         upy.up =0;
         geo.checkcounter= 2;
+        car.rotation = Quaternion.Euler(0, 180, 0);
+        rb.velocity = new Vector3(0, 0, 0);
     }
     public void tp3()
     {
         car.position = newCarLocation3.position;
         upy.up =0;
         geo.checkcounter= 3;
+        car.rotation = Quaternion.Euler(0, 270, 0);
+        rb.velocity = new Vector3(0, 0, 0);
     }
 
     public void tp4()
@@ -117,12 +119,16 @@ public class timo : MonoBehaviour
        car.position = newCarLocation4.position;
        upy.up =0;
        geo.checkcounter= 4;
+       car.rotation = Quaternion.Euler(0, 0, 0);
+        rb.velocity = new Vector3(0, 0, 0);
     }
     public void tp5()
     {
         car.position = newCarLocation5.position;
         upy.up =0;
         geo.checkcounter= 5;
+        car.rotation = Quaternion.Euler(0, 180, 0);
+        rb.velocity = new Vector3(0, 0, 0);
     }
 
     public void tp6()
@@ -130,12 +136,16 @@ public class timo : MonoBehaviour
        car.position = newCarLocation6.position;
        upy.up =0;
        geo.checkcounter= 6;
+       car.rotation = Quaternion.Euler(0, 270, 0);
+        rb.velocity = new Vector3(0, 0, 0);
     }
     public void tp7()
     {
         car.position = newCarLocation7.position;
         upy.up =0;
         geo.checkcounter= 7;
+        car.rotation = Quaternion.Euler(0, 0, 0);
+        rb.velocity = new Vector3(0, 0, 0);
     }
 
     public void tp8()
@@ -143,12 +153,16 @@ public class timo : MonoBehaviour
        car.position = newCarLocation8.position;
        upy.up =0;
        geo.checkcounter= 8;
+       car.rotation = Quaternion.Euler(0, 180, 0);
+        rb.velocity = new Vector3(0, 0, 0);
     }   
     public void tp9()
     {
        car.position = newCarLocation9.position;
        upy.up =0;
        geo.checkcounter= 9;
+       car.rotation = Quaternion.Euler(0, 0, 0);
+       rb.velocity = new Vector3(0, 0, 0);
     }
 
     public void tp10()
@@ -156,17 +170,19 @@ public class timo : MonoBehaviour
         car.position = newCarLocation10.position;
         upy.up =0;
         geo.checkcounter= 10;
-        
+        car.rotation = Quaternion.Euler(0, 0, 0);
+        rb.velocity = new Vector3(0, 0, 0);
     }
         public void tp11()
     {
         car.position = newCarLocation11.position;
+        car.rotation = Quaternion.Euler(0, 180, 0);
+        rb.velocity = new Vector3(0, 0, 0);
         upy.up =0;
         geo.checkcounter= 0;
         
+        
     }
-
-
         
 
 }
