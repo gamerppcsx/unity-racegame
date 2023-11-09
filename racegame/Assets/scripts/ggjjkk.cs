@@ -10,7 +10,7 @@ public class ggjjkk : MonoBehaviour
 
     void Update()
     {
-        kgm.Rotate(0, 0.2f, 0);
+        kgm.Rotate(0, 0.02f, 0);
         kgm2.Rotate(0, 0, 90);
     }
 }
