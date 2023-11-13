@@ -22,7 +22,7 @@ public class DestroyCubesjet2 : MonoBehaviour
         kkl2 = jet.GetComponent<DestroyCubesjet>();
 
     }
-    void Update()
+    void FixedUpdate()
     {
       if(kkl2.kkl==2)
     {

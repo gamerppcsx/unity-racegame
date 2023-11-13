@@ -8,6 +8,9 @@ namespace Timer
 public class DestroyCubesjet : MonoBehaviour 
 {
      public float kkl;
+     public ParticleSystem ParticleSystem;
+     public ParticleSystem ParticleSystem2;
+     public ParticleSystem ParticleSystem3;
 
      
 
@@ -20,12 +23,19 @@ public class DestroyCubesjet : MonoBehaviour
         kkl=1;
         Invoke("MyFunction2", 0.2f);
         Invoke("MyFunction", 17.5f);
+        ParticleSystem.Play ();
+        ParticleSystem2.Play ();
+        ParticleSystem3.Play ();
         }
        
     }
     void MyFunction()
     {
         kkl=0;
+        
+    ParticleSystem.Stop ();
+    ParticleSystem2.Stop ();
+    ParticleSystem3.Stop ();
         
     }
         void MyFunction2()
