@@ -9,10 +9,10 @@ public class meny : MonoBehaviour
     private float ispressing;
     private bool goBool;
 
-    private void FixedUpdate() {
+    void FixedUpdate() {
         GetInput();
     }
-    private void GetInput() {
+    void GetInput() {
 
         ispressing = Input.GetAxis("Cancel");
         if(ispressing > 0)

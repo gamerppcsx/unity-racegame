@@ -10,6 +10,7 @@ public class pausemenu : MonoBehaviour{
 
     public GameObject pauseMenuUI;
     public GameObject pauseMenu2UI;
+    public AudioSource caryAudio;
 
     void Update()
     {
@@ -32,6 +33,7 @@ public class pausemenu : MonoBehaviour{
         Time.timeScale = 1f;
         GameIsPaused = false;
         pauseMenu2UI.SetActive(false);
+        caryAudio.Play();
     }
 
     public void Pause ()
@@ -40,10 +42,13 @@ public class pausemenu : MonoBehaviour{
         Time.timeScale = 0f;
         GameIsPaused = true;
         pauseMenu2UI.SetActive(false);
+        caryAudio.Stop();
     }
     public void quit()
     {
         SceneManager.LoadScene("menuXD");
+        Time.timeScale = 1f;
+        
     }
     public void tijden ()
     {
@@ -51,5 +56,9 @@ public class pausemenu : MonoBehaviour{
         Time.timeScale = 0f;
         GameIsPaused = false;
         pauseMenu2UI.SetActive(true);
+    }
+    void Start()
+    {
+        
     }
 }
