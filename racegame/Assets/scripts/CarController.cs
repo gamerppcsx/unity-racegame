@@ -11,10 +11,8 @@ public class CarController : MonoBehaviour
     private float isBreaking;
     private bool BreakingBool;
     public float KPH;
-    public float Turbo;
-    public float isTurbo;
-    public GameObject c1;
-    private DestroyCubescs cd;
+
+    
     
 
 
