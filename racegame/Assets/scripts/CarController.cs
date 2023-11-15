@@ -11,6 +11,10 @@ public class CarController : MonoBehaviour
     private float isBreaking;
     private bool BreakingBool;
     public float KPH;
+    public float Turbo;
+    public float isTurbo;
+    public GameObject c1;
+    private DestroyCubescs cd;
     
 
 
@@ -61,6 +65,12 @@ public class CarController : MonoBehaviour
         //isBreaking = Input.GetKey(KeyCode.Space);
         isBreaking = Input.GetAxis("Jump");
         if(isBreaking > 0){ BreakingBool = true; }else{ BreakingBool = false; }
+
+
+        
+
+
+
     }
 
     private void HandleMotor() {
@@ -107,4 +117,7 @@ public class CarController : MonoBehaviour
         wheelTransform.rotation = rot;
         wheelTransform.position = pos;
     }
+
+
+
 }
