@@ -8,9 +8,9 @@ public class ggjjkk : MonoBehaviour
     public Transform kgm2;
 
 
-    void Update()
+    void FixedUpdate()
     {
-        kgm.Rotate(0, 0.02f, 0);
+        kgm.Rotate(0, 0.05f, 0);
         kgm2.Rotate(0, 0, 90);
     }
 }
